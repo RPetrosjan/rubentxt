@@ -1,8 +1,8 @@
 {
-    "name": "dzango/twig-truncate-extension",
+    "name": "RPetrosjan/rubentxt",
     "description": "A Twig extension to truncate text while preserving HTML tags",
     "keywords": ["twig", "truncate"],
-    "homepage": "https://github.com/dzango/TwigTruncateExtension",
+    "homepage": "https://github.com/RPetrosjan/rubentxt",
     "type": "library",
     "license": "MIT",
     "authors": [
