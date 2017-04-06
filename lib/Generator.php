@@ -40,6 +40,21 @@ class Generator
      */
     protected $paragraphStDev = 1.930;
 
+    public function getFilters()
+    {
+        return array(
+            new Twig_SimpleFilter(
+                'loremipsum',
+                array($this, 'getParagraphs'),
+                array(
+                    'is_safe' => array('html')
+                )
+            ),
+        );
+    }
+
+
+
     /**
      * @var array
      */
@@ -99,7 +114,6 @@ class Generator
     {
         if (is_array($words)) {
             $this->words = array_merge($this->words, $words);
-
             return;
         }
 
